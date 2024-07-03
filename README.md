@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Scaffold
 
-## Getting Started
+This repository is a scaffold for quickly starting new projects with Next.js. It includes pre-installed dependencies and a structured project layout to streamline development.
 
-First, run the development server:
+## Table of Contents
+
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Available Scripts](#available-scripts)
+
+## Installation
+
+To use this scaffold, you can clone the repository and install the necessary dependencies.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/nextjs-scaffold.git
+cd nextjs-scaffold
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The following dependencies are pre-installed and ready to use in this scaffold:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: React framework for server-side rendering and static site generation.
+- React: Library for building user interfaces.
+- React DOM: Serves as the entry point to the DOM and server renderers for React.
+- TypeScript: Superset of JavaScript that adds static typing.
 
-## Learn More
+Additional dependencies can be added as needed for your specific projects.
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the project directory, you can run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`yarn dev`
+Runs the development server. Open http://localhost:3000 to view it in the browser.
 
-## Deploy on Vercel
+`yarn build`
+Builds the app for production to the .next folder. The build is minified, and the filenames include the hashes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`yarn start`
+Runs the built app in production mode. Make sure to build the app before using this script.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`yarn lint`
+Runs the linter to check for code quality issues.
+
+`yarn prettier`
+Runs Prettier to format the codebase.
+
+`yarn postinstall`
+Runs Husky install after dependencies are installed.
+
+`yarn prepare`
+Runs Husky install to set up Git hooks.
