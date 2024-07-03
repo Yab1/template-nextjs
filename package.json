@@ -12,7 +12,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "14.2.4",
